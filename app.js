@@ -21,10 +21,13 @@ while (chute != numeroSecreto) {
 }
 
 // Para caso positivo acertar na primeira tentativa, corrige o plural:
-if (tentativas > 1) {
+let numeroTentativas = tentativas > 1 ? 'tentativas' : 'tentativa';
+alert('Isso ai! Você descobriu, o número secreto é ' + numeroSecreto + ' com ' + tentativas + ' ' + numeroTentativas + '!');
+
+/*if (tentativas > 1) {
     alert('Isso ai! Você descobriu, o número secreto é ' + numeroSecreto + ' com ' + tentativas + ' tentativas!');
 } else {
     alert('Isso ai! Você descobriu, o número secreto é ' + numeroSecreto + ' com ' + tentativas + ' tentativa!');
 }
-
+*/
 
