@@ -15,11 +15,12 @@ while (chute != numeroSecreto) {
 
     // se chute for igual ao número secreto:
     if (chute == numeroSecreto) {
+        break;
     } else {
         if (chute > numeroSecreto) {
-            alert('O número secreto é menor do que ' + chute + '!');
+            alert(`O número secreto é menor do que ${chute} !`);
         } else {
-            alert('O número secreto é maior do que ' + chute + '!');
+            alert(`O número secreto é maior do que ${chute} !`);
         }
         tentativas++;
     }
